@@ -1,11 +1,4 @@
-body
-{
-background-color:yellow
-}
-{
-font-family:"Georgia";
-font-size:30px;
-}
+
 
 body{
     font-family: var(--font-family);
