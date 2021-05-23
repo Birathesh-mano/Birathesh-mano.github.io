@@ -6,3 +6,16 @@ background-color:yellow
 font-family:"Georgia";
 font-size:30px;
 }
+
+body{
+    font-family: var(--font-family);
+
+    font-weight: 400;
+    line-height: 1.6;
+    background: linear-gradient(to right, var(--accent-left), var(--accent-right)), url("./pexels-photo-7706372.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: var(--color-white);
+    margin: 0;
+}
