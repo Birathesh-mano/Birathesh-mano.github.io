@@ -6,7 +6,7 @@ var products = [
 	{
 		name: "Milk $2.00",
 		LactoseFree: false,
-		NutFree: false,
+		NutFree: true,
 		Organic: false,
 		
 		price: 2.00,
@@ -106,32 +106,35 @@ function restrictListProducts(prods, restriction, Organic) {
 	for (let i=0; i<prods.length; i+=1) {
 
 		if((Organic == "Organic") && (prods[i].Organic== true)){
-
-		if ((restriction == "LactoseFree") && (prods[i].LactoseFree == true)){
+		
+			
+		if ((restriction == "LactoseFreeAndNutFree") && (prods[i].LactoseFreeAndNutFree == true)){
+			product_names.push(prods[i].name);
+		}
+		else if ((restriction == "LactoseFree") && (prods[i].LactoseFree == true)){
 			product_names.push(prods[i].name);
 		}
 		else if ((restriction == "NutFree") && (prods[i].NutFree == true)){
 			product_names.push(prods[i].name);
 		}
 	
-		else if ((restriction == "LactoseFreeAndNutFree") && (prods[i].LactoseFreeAndNutFree == true)){
-			product_names.push(prods[i].name);
 		}
 		else if (restriction == "None"){
 			product_names.push(prods[i].name);
 		}
 	}
 		else if((Organic == " Non Organic") && (prods[i].Organic== false)){
-			if ((restriction == "LactoseFree") && (prods[i].LactoseFree == true)){
+			if (restriction == "None"){
+				product_names.push(prods[i].name);
+			}
+			
+			else if ((restriction == "LactoseFree") && (prods[i].LactoseFree == true)){
 				product_names.push(prods[i].name);
 			}
 			else if ((restriction == "NutFree") && (prods[i].NutFree == true)){
 				product_names.push(prods[i].name);
 			}
 		
-			else if ((restriction == "LactoseFreeAndNutFree") && (prods[i].LactoseFreeAndNutFree == true)){
-				product_names.push(prods[i].name);
-			}
 			else if (restriction == "None"){
 				product_names.push(prods[i].name);
 			}
