@@ -1,0 +1,57 @@
+.massage{
+    border: 2px solid rgb(21, 27, 107);
+    border-radius: 16px;
+}
+.acupuncture{
+    border: 2px solid rgb(21, 27, 107);
+    border-radius: 16px;
+}
+.chiropractic{
+    border: 2px solid rgb(21, 27, 107);
+    border-radius: 16px;
+}
+.reflexology{
+    border: 2px solid rgb(21, 27, 107);
+    border-radius: 16px;
+}
+.Osteopathy{
+    border: 2px solid rgb(21, 27, 107);
+    border-radius: 16px;
+}
+.employee1{
+    border: 2px solid rgb(21, 27, 107);
+    border-radius: 16px;
+}
+.employee2{
+    border: 2px solid rgb(21, 27, 107);
+    border-radius: 16px;
+}
+.employee3{
+    border: 2px solid rgb(21, 27, 107);
+    border-radius: 16px;
+}
+h1{
+    text-align: center;
+}
+.companyname{
+    background-color:rgb(86, 236, 144);
+}
+ 
+ .services{
+    background-color:rgb(72, 173, 123);
+}
+
+.appointment{
+    background-color:rgb(102, 100, 199);
+    border-radius: 16px;
+} 
+.team{
+    background-color:rgb(102, 100, 199);
+    border-radius: 16px;
+} 
+
+.personal{
+    background-color:rgb(158, 158, 158);
+    border-radius: 16px;
+} 
+
