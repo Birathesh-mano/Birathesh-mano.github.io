@@ -1,0 +1,123 @@
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <title>Module 4 Lab</title>
+        
+    </head>
+    <body>
+        <div id="logo" class="companyName">
+            <h1>Massive Massage Clinic </h1>
+            <img class="subserviceimage" src="images/logo.jpg" style="width:296px;height:300px; display:block;margin-left:auto; margin-right: auto;">
+            <h3 style="text-align: center;">Address: 1600 Pennsylvania Avenue NW, Washington, DC 20500, USA </h3>
+        </div>
+        
+        <div id="services" class="services">
+            <h2>Services: </h2>
+            <div id= "massage" class="massage" style="width: 300px;float:left;  height:410px;  margin:40px">
+                <h1>Magic Muscle Message</h1>
+                <img class="subserviceimage" src="images/massage.jpg" style="width:296px;height:300px">
+                Get up all in ya back and get dem knots outta dere for just $5
+            </div>
+            <div id= "acupuncture" class="acupuncture" style="width: 300px; float:left; height:410px;  margin:40px">
+                <h1>Ancient Asian Needle Method</h1>
+                <img class="subserviceimage" src="images/acupunctre.jpg" style="width:296px;height:300px">
+                Get up all in ya skin and get dem knots outta dere for just $6
+            </div>
+            <div id= "chiropractic" class="chiropractic" style="width: 300px; float:left;  height:410px;  margin:40px">
+                <h1>Allign Your Spine</h1>
+                <img class="subserviceimage" src="images/chiropractic.jpg" style="width:296px;height:300px">
+                Allign Your Spine with a leading massager
+            </div>
+            <div id= "reflexology" class="reflexology" style="width: 300px; float:left; height:410px;  margin:40px">
+                <h1>Foot Massage Reflex</h1>
+                <img class="subserviceimage" src="images/reflexology.jpg" style="width:296px;height:300px">
+                The homie quan will test your reflexes to ensure you stay ready at  the price of $4
+
+            </div>
+            <div id= "Osteopathy" class="Osteopathy" style="width: 300px; float:left; height:410px;  margin:40px">
+                <h1>Deep Muscle Massage</h1>
+                <img class="subserviceimage" src="images/Osteopathy.jpg" style="width:296px;height:300px">
+                The squad will give you Deep Muscle Massage service starting at $9
+
+            </div>
+            <button type="button" class="btn btn-primary btn-lg" onClick="document.getElementById('personal').scrollIntoView();" style=" position: relative;top: 95%;left: 45%;"> Book Appointment</button>
+            
+        </div>
+        <div id="team" class="team">
+            <br><br><br><h2>Our Squad of World Renowned Message Specialists</h2>
+            <div id="employee1" class="employee1" style="width: 500px; float:left; height:600px;  margin:60px">
+                <img class="subserviceimage" src="images/employee1.jpg" style="width:496px;height:500px">
+                <h1>Lebum James</h1>
+                Head masseuse, has been a professional in the industry for 23 years.
+            </div>
+            <div id="employee2" class="employee2" style="width: 500px; float:left; height:610px;  margin:60px ">
+                <img class="subserviceimage" src="images/employee2.jpg" style="width:496px;height:500px">
+                <h1>Zendaya</h1>
+                Head Chiropracter, leading the industry for over 20 years, a queen.
+            </div>
+            <div id="employee3" class="employee3" style="width: 500px; float:left; height:610px;  margin:60px ">
+                <img class="subserviceimage" src="images/employee3.jpg" style="width:496px;height:500px;">
+                <h1>Mario Ballotelli</h1>
+                Owner, Breaking backs since 96'.
+            </div>
+        </div>
+        <div id="appointment" class="appointment">
+            <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
+                <iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+                  style="border: 10px;" allowfullscreen></iframe>
+              </div>
+       
+            <br><br><h1>Book an Appointment</h1>
+            <div id="selectservice" class="selectservice" style="float: left; margin:150px;">
+                <select id="service" name="service" >
+                    <option value="Select Service">Choose Your Service</option>
+                    <option value="Massage">Magic Muscle Message</option>
+                    <option value="Acupuncture">Ancient Asian Needle Method</option>
+                    <option value="Chiropractic">Allign Your Spine</option>
+                    <option value="Reflexology">Foot Massage Reflex</option>
+                    <option value="Osteopathy">Deep Muscle Massage</option>
+                </select>
+            </div>
+            <div class="date" style="float: left; margin:150px;">
+                <form id="date" action="/action_page.php">
+                    <label for="birthday">Appointment Date: </label>
+                    
+                    <input type="date" id="birthday" name="birthday">
+                    
+                </form>
+            </div>
+            <div class="date" style="float: left; margin:150px;">
+                <label for="appt">Choose a time for your meeting:</label>
+
+                <input type="time" id="appt" name="appt"
+                    min="09:00" max="17:00" required>
+
+                <small>Open 24/7</small>
+
+            </div>
+            <div id="personal" class="personal" style="float: left; margin:-120px;">
+                
+               <label for="fname">First name:</label>
+               <input type="text" id="fname" name="fname"><br><br>
+               <label for="lname">Last name:</label>
+               <input type="text" id="lname" name="lname"><br><br>
+               
+               <label for="number">Phone Number:</label>
+               <input type="text" id="number" name="number"><br><br>
+               <input type="submit" value="Submit">
+            
+                
+            </div>
+            <body style="background-color:rgb(100, 95, 177);"></body>
+    </body>
+    
+   
+    
+   
+   
+</html>
