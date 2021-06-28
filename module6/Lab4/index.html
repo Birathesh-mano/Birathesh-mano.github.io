@@ -1,0 +1,558 @@
+<!doctype html>
+<!-- Here is a link to the code the documents this code is based on
+https://getbootstrap.com/docs/5.0/getting-started/introduction/
+This will help you get started with your code!
+-->
+<html lang="en">
+<head>
+   <!-- Required meta tags -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- Bootstrap CSS -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+   
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+   <!-- Style sheet (CSS) and JavaScript scripts necessary to use JQuery as well as JQueryUI library -->
+   <!-- which is built on top of JQuery and offers additional possibilities -->
+   <!-- For example, JQuery UI has a datepicker which is popular and that we can use -->
+   <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/excite-bike/jquery-ui.css" rel="stylesheet" type="text/css">
+   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+    <script src="scripts/validation.js"></script>
+
+    <title>MMC LAB 6</title>
+
+    
+</head>
+<body>
+    <section id="Home"></section>
+    <br>
+ 
+    
+    <nav class="navbar bg-white text-black p-3 my-3 ">
+        <h1><img src="images/muscleLogo.png" width="170" height="130">Massive Massage Clinic</h1>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg bg-secondary navbar-dark  fixed-top">
+        <div class="container">
+            
+            
+            <a href="#" class="navbar-brand"></a>
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#Home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#Who" class="nav-link">Who Are We?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#Team" class="nav-link">Team</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#Services" class="nav-link">Services</a>
+                    </li>
+
+                    
+
+                    <li class="nav-item">
+                        <a href="#Appointment" class="nav-link">Appointment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#where" class="nav-link">Location</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+    </nav>
+
+<!--
+I store all of the page information in a container,
+Many websites will use what is called CSS grid layouts, where you will have a header, body, footer and both sides used for ads or other information
+-->
+<div class = "container-xl">
+
+
+    <!--
+    Most websites now feature what is called a NavBar.
+    The example I give is quite simple with a logo and some text, but you can use it for many navigational patterns
+    https://getbootstrap.com/docs/5.0/components/navbar/
+    -->
+
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>Covid-19 Update</strong> After moving into Stage 2, you may now enter the facility at your appointment time. Entry WITHOUT as mask IS NOT PERMITTED.
+        <button type="button" class="btn-close " data-bs-dismiss="alert"  aria-label="Close"></button>
+    </div>
+
+    <!--
+        Code inspired by https://getbootstrap.com/docs/4.1/components/carousel/
+    -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="images/slide3.jpg" alt="First slide" id = "timg">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="images/slide2.jpg" alt="Third slide" id = "timg">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="images/slide1.jpg" alt="Second slide" id = "timg">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="images/slide4.jpg" alt="Third slide" id = "timg">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <section id="Who"></section>
+    <br>
+    
+    <div class=" p-3 my-3 border bg-success text-white ">
+        <h1 class="">Who Are We?</h1>
+        <p class="p-4 my-3" style="font-size: 25px">Here at Massive Massage Clinic we are geared towards working with top tier athletes along with normal civilians looking for help.
+        We pride ourselves with our top tier tech aslong with our leading experts. At MMC you will always be looked after, and the services provided are unparalled anywhere accross the world.</p>
+
+        <p style="font-size: 25px; padding-left: 1.5rem">"MMC is the best place on earth" -Lebron Jordan</p>
+    </div>
+
+     <!-- Cards are quite useful when building a website. They are a useful way to organize information.
+    They can be organized using a CSS grid or other layout options.
+    https://getbootstrap.com/docs/5.0/components/card/
+    -->
+    <section id="Team"></section>
+    <br><br>
+    
+    <h1><img src="images/doctorLogo.png" width="80" height="70">Meet the Team</h1>
+    <div class="row justify-content-around">
+        <div class="card" style="width: 25rem;">
+            <img src="images/employee1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Master Oogway completed 23 years of training at the Shoalin Temple. 
+                    After spending numberous years at various locations healing people through the use of Eastern Medicine he has decided to offer his skills at MMC. Through strict discipline and proven
+                    results Master Oogway has shown he is truely at the top of his field.
+                </p>
+            </div>
+        </div>
+        <div class="card" style="width: 25rem;">
+            <img src="images/employee2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Doctor Octopus graduated as a top tier misseuse from the MMC Academy. He prides himself in making the lives
+                    of clients better through his various techniques.
+                </p>
+            </div>
+        </div>
+        <div class="card" style="width: 25rem;">
+            <img src="images/employee3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Doctor Sakura Haruno used to work in various villages in rural Japan. She has learned from various elders and is now the master of all Massages world wide.</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <section id="Services"></section>
+    
+    <h1><img src="images/servicesLogo.png" width="80" height="70" > The Top Tier Services Provided</h1>
+        <!-- This example is using what is called an accordian, this is one of three examples
+    https://getbootstrap.com/docs/5.0/components/accordion/
+    -->
+
+    <!--service overviews taken from https://www.highway24vetclinic.com/services/Massages-->
+
+    
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Massages
+                </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <strong>Magic Muscle Massage</strong><br>
+                    Our team of physicians will use trade secret methods to work into your muscles and relax your soul. You will leave this feeling enlightened while sipping on our secret juice!
+                    <br><br>
+                    <strong>Deep Muscle Massage</strong><br>
+                    Our team of physicians will dig deep into your muscles and relax your soul. You will leave this feeling invincible as if you could run 1000 kilometers!
+                    <br><br>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Muscle & Body Scans 
+                </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+
+                    <strong>Muscle Scan</strong> <br>
+                    Our team of experts will use our state of the art technology to do a deep muscle scan and test what types of twitch fibers and various other elements to ur muscle composition.
+                    <br><br>
+                    <strong>Body Fat Scan</strong> <br>
+                    Our team of experts will use our state of the art technology to scan your body to see where majority of your fat is located as well as give u an accurate body fat %. We will also provide
+                    a work out plan specifically designed for you based off your scan.
+                    <br><br>
+                    
+                 
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Body Allignment
+                </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <strong>Chiropractic (Spine)</strong> <br>
+                    Our specialist will leave your body feeling alot more loose by fixing the bone allignment in your spine.
+                    <br><br>
+                    <strong>Chiropractic (Legs)</strong> <br>
+                    Our specialist will leave your body feeling alot more loose by fixing the bone allignment in your legs.
+                    <br><br>
+                    <strong>Chiropractic (Arms)</strong> <br>
+                    Our specialist will leave your body feeling alot more loose by fixing the bone allignment in your arms.
+                    <br><br>
+
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                    Rehab
+                </button>
+            </h2>
+            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <strong>Cryo-Therapy</strong> <br>
+                    Relax and rehabilitate yourself in our icecold pools, proven to decrease rehab time.
+                    <br><br>
+                    <strong>Heat-Therapy</strong> <br>
+                    Through the use of low levels of radiation, you will have improved muscle growth.
+                    <br><br>
+
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                    Eastern Techniques
+                </button>
+            </h2>
+            <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <strong>Ancient Asian Needle Method</strong><br>
+                    Through the use of needles, our specialists with extensive training in Eastern medicine will activate all you chakra points so you may live a fulfulling life.
+      
+                    <br><br>
+                    <strong>Secret Juice of 6 paths</strong><br>
+                    Our juice will open your mind up and remove all world constraints you face. Free yourself from the basic world contructs and attain a new understanding.
+                    <br><br>
+                 
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+        <!--
+    We can also use buttons to expand some hidden options
+    https://getbootstrap.com/docs/5.0/components/collapse/
+    -->
+    <div class = "container-xl" id = "appointment">
+    
+        <!--
+    We can also use buttons to expand some hidden options
+    https://getbootstrap.com/docs/5.0/components/collapse/
+    -->
+    
+    <button class="btn btn-success btn-lg"  type="button" data-bs-toggle="collapse" data-bs-target="#collapseAppointment" aria-expanded="false" aria-controls="collapseAppointment">
+        Make An Appointment
+    </button>
+    <section id="Appointment"></section>
+    <div class="collapse" id="collapseAppointment">
+        <div class="card card-body">
+            <h5>Contact Info</h5><br>
+            <div class = "row">
+                <div class = "col-md-6"><!--Left Column-->
+                    <div class = "row"><!--Full Name-->
+                        
+                        <div class = "col-md-3">Full Name<span class = "text-danger">*</span></div>
+                        <div class = "col-md">
+                            <div class = "row">
+                                <div class = "col-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                                        <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+                                      </svg>
+                                </div>
+                                <div class = "col-md">
+
+                                    <input type = "text" id = "inputName" name = "txtName" class = "form-control" placeholder="BoBy Jordan James" required/>
+                                </div>
+                               
+                            </div>
+                            
+                        </div>
+                    </div><br>
+                    <div class = "row"><!--Email-->
+                        <div class = "col-md-3">Email Address<span class = "text-danger">*</span></div>
+                        <div class = "col-md">
+                            <div class = "row">
+                                <div class = "col-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                                        <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
+                                      </svg>
+                                </div>
+                                <div class = "col-md">
+
+                                    <input type = "text" id = "inputEmail" name = "txtEmail" class = "form-control" placeholder="MMC12@hotmail.com"/>
+                                </div>
+                               
+                            </div>
+                            
+                        </div>
+                    </div><br>
+                    <div class = "row"><!--phone-->
+                        <div class = "col-md-3">Phone Number<span class = "text-danger">*</span></div>
+                        <div class = "col-md">
+                            <div class = "row">
+                                <div class = "col-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                                      </svg>
+                                </div>
+                                <div class = "col-md">
+                                    <input type = "text" id = "phone" name = "txtPhoneNumber" class = "form-control" placeholder="XXX XXX XXXX"/>
+                                    
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div><br>
+                    <div class = "row"><!--pay-->
+                        <div class = "col-md-3">Payment Info<span class = "text-danger">*</span></div>
+                        <div class = "col-md">
+                            <div class = "row">
+                                <div class = "col-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-credit-card-fill" viewBox="0 0 16 16">
+                                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v1H0V4zm0 3v5a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7H0zm3 2h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1z"/>
+                                      </svg>
+
+                                </div>
+                                <div class = "col-md">
+
+                                    <input type = "text" id = "debit" name = "creditNum" class = "form-control" placeholder="XXXX XXXX XXXX XXXX" title="Credit/Debit Accepted"/>
+                       
+                                </div>
+
+                            </div>
+                            </div>
+                    </div><br>
+                    <div class = "row"><!--Date-->
+                        <div class = "col-md-3">Date<span class = "text-danger">*</span></div>
+                        <div class = "col-md">
+                            <div class = "row">
+                                <div class = "col-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-check-fill" viewBox="0 0 16 16">
+                                        <path d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4V.5zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2zm-5.146-5.146-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708z"/>
+                                      </svg>
+                                </div>
+                                <div class = "col-md">
+                                    <div class = "form-group">
+                                        <input type = "text" class ="form-control" id = "dateInput" placeholder="mm/dd/yyyy"/>                               
+                                    </div>
+                                    
+                                </div>
+                               
+                            </div>
+                            
+                        </div>
+                    </div><br>
+                    <div class = "row"><!--Time-->
+                        <div class = "col-md-3">Time<span class = "text-danger">*</span></div>
+                        <div class = "col-md">
+                            <div class = "row">
+                                <div class = "col-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                                        <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                                        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+                                      </svg>
+                                </div>
+                                <div class = "col-md">
+                                    <div class = "form-group">
+                                        <input type = "time" class ="form-control"  id = "timeInput" value = "08:30:00" placeholder="hh:mm" min = "8:00" max = "19:00"/>                               
+                                    </div>
+                                    
+                                </div>
+                               
+                            </div>
+                            
+                        </div>
+                    </div><br>
+                    <div class = "row"><!--Service-->
+                        <div class = "col-md-3">Service<span class = "text-danger">*</span></div>
+                        <div class = "col-md">
+                            <div class = "row">
+                                <div class = "col-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                      </svg>
+                                </div>
+                                <div class = "col-md">
+                                    <select class="form-select" id = "selectService" >
+                                        <option selected value="Massages">Massages</option>
+                                        <option value="Muscle & Body Scan">Muscle & Body Scan</option>
+                                        <option value="Body Allignment">Body Allignment</option>
+                                        <option value="Rehab">Rehab</option>
+                                        <option value="Eastern Techniques">Eastern Techniques</option>
+                                      </select>
+                                    
+                                </div>
+                               
+                            </div>
+                            
+                        </div>
+                    </div><br>
+                    <div class = "row"><!--Doctor-->
+                        <div class = "col-md-3">Expert<span class = "text-danger">*</span></div>
+                        <div class = "col-md">
+                            <div class = "row">
+                                <div class = "col-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                                        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                      </svg>
+                                </div>
+                                <div class = "col-md">
+
+                                    <select class="form-select" id = "selectVet">
+                                        <option selected value="Anyone">Anyone</option>
+                                        <option value="Master Oogway">Master Oogway</option>
+                                        <option value="Doctor Octopus">Doctor Octopus</option>
+                                        <option value="Sakura Haruno">Sakura Haruno</option>
+                                      </select>
+                                </div>
+                               
+                            </div>
+                            
+                        </div>
+                    </div><br>
+                    <p><small>Make sure all fields are filled out correctly please</small></p>
+                    <div class = "form-group">
+                        <button type="button" id = "submitbtn" type = "submit" class="btn btn-success btn-lg btn-block" data-bs-toggle="modal" data-bs-target="#exampleModal" >
+                            Confirm Your Appointment
+                            
+                        </button>
+                    </div>
+
+                </div>
+                <div class = "col-md-6">
+                    <div class="form-group">
+                        <textarea name="txtMsg" class="form-control" placeholder="Any extra details regarding the appointment (optional)" style="width: 100%; height: 425px;"></textarea>
+                    </div>
+                </div><!--Right Column-->
+                
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+     <!-- Modal -->
+     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Appointment Confirmed</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    
+                    <p id = "infoFill"></p>
+                    <br>
+                    CONGRATS! Your Appointment is Set!!  <br>
+                    
+                    <br><br>
+                    See You Soon At:<br>
+                    Massive Massage Clinic<br>
+                    179 Leaf Village Drive<br>
+                    Scarborough, ON M1P 4G6<br>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+  
+
+    <section id="where"></section>
+<br>
+    <div class=" p-3 my-3 bg-dark text-success ">
+        <div class="row align-items-start">
+            <div class="col-4">
+                <p class = "h5">What We Do</p>
+                We, at MMC maintain that we will always provide top tier services to anyone. 90% of sales go towards a charity of your choice. 
+                Our mentality is that if we get fit together we will be fit forever.
+              </div>
+              <div class="col-4">
+                <p class = "h5">Are We Open</p>
+                Due to high demand we are now offering 24/7 services, book an appointment anytime!
+              </div>
+              <div class="col-4">
+                <p class = "h5">Where We Are</p>
+                Massive Massage Clinic<br>
+                179 Leaf Village Drive<br>
+                Scarborough, ON M1P 4G6<br>
+              </div>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- here we input our javascript helper -->
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>
