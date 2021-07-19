@@ -1,0 +1,222 @@
+<!doctype html>
+<!-- Here is a link to the code the documents this code is based on
+https://getbootstrap.com/docs/5.0/getting-started/introduction/
+This will help you get started with your code!
+-->
+<html lang="en">
+<head>
+   <!-- Required meta tags -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- Bootstrap CSS -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+   
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+   <!-- Style sheet (CSS) and JavaScript scripts necessary to use JQuery as well as JQueryUI library -->
+   <!-- which is built on top of JQuery and offers additional possibilities -->
+   <!-- For example, JQuery UI has a datepicker which is popular and that we can use -->
+   <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/excite-bike/jquery-ui.css" rel="stylesheet" type="text/css">
+   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+    <script src="scripts/validation.js"></script>
+
+    <title>MMC LAB 6</title>
+
+    
+</head>
+<body>
+    <section id="Home"></section>
+    <br>
+ 
+    
+    <nav class="navbar bg-white text-black p-3 my-3 ">
+        <h1><img src="images/muscleLogo.png" width="170" height="130">CheckMate!</h1>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg bg-secondary navbar-dark  fixed-top">
+        <div class="container">
+            
+            
+            <a href="#" class="navbar-brand"></a>
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Domicile</a>
+                    </li>
+                   
+                    <li class="nav-item">
+                        <a href="Professors.html" class="nav-link">Équipe</a>
+                    </li>
+
+    
+                    <li class="nav-item">
+                        <a href="appointment.html" class="nav-link">Rendez-vous</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#where" class="nav-link">Emplacement</a>
+                    </li>
+
+                    
+                    <li class="nav-item">
+                        <a href="french.html" class="nav-link">Aider</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="Help.html" class="nav-link">Anglais</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+    </nav>
+
+<!--
+I store all of the page information in a container,
+Many websites will use what is called CSS grid layouts, where you will have a header, body, footer and both sides used for ads or other information
+-->
+<div class = "container-xl">
+
+
+    <!--
+    Most websites now feature what is called a NavBar.
+    The example I give is quite simple with a logo and some text, but you can use it for many navigational patterns
+    https://getbootstrap.com/docs/5.0/components/navbar/
+    -->
+
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>Covid-19 Update</strong>Après être passé à l'étape 2, vous pouvez maintenant entrer dans l'établissement à l'heure de votre rendez-vous. L'entrée SANS comme masque N'EST PAS AUTORISÉE
+        <button type="button" class="btn-close " data-bs-dismiss="alert"  aria-label="Close"></button>
+    </div>
+
+   
+    
+    
+
+     <!-- Cards are quite useful when building a website. They are a useful way to organize information.
+    They can be organized using a CSS grid or other layout options.
+    https://getbootstrap.com/docs/5.0/components/card/
+    -->
+
+
+
+
+    <section id="Services"></section>
+    
+    <h1><img src="images/servicesLogo.png" width="80" height="70" > Questions fréquemment posées</h1>
+        <!-- This example is using what is called an accordian, this is one of three examples
+    https://getbootstrap.com/docs/5.0/components/accordion/
+    -->
+
+    <!--service overviews taken from https://www.highway24vetclinic.com/services/Massages-->
+
+    
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Combien facturez-vous?
+                </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <strong>1 séance</strong><br>
+                    Nous facturons 60 $ pour 1 personne 1 sur 1 session.
+                    <br><br>
+                    <strong>10 séance</strong><br>
+                    Nous facturons 300 $ pour 10 séances 1 sur 1.
+                    <br><br>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Est-ce une arnaque ?
+                </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+
+                    <strong>Non, nous ne sommes pas une arnaque !</strong> <br>
+                    Nous avons produit de nombreuses légendes de renommée mondiale, et vous pourriez être le prochain. Nous sommes dans la fortune 500.
+                    <br><br>
+                    
+                    
+                 
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    À quel point vais-je être bon ?
+                </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <strong>Ça dépend</strong> <br>
+                    Toute compétence que vous apprenez dans la vie dépend du temps et de l'attention que vous êtes prêt à y consacrer, nos meilleurs étudiants sont les meilleurs au monde.
+                    <br><br>
+                   
+                    
+
+                </div>
+            </div>
+        </div>
+        
+
+
+    </div>
+
+
+
+        <!--
+    We can also use buttons to expand some hidden options
+    https://getbootstrap.com/docs/5.0/components/collapse/
+    -->
+    
+
+
+  
+
+    <section id="where"></section>
+<br>
+    <div class=" p-3 my-3 bg-dark text-success ">
+        <div class="row align-items-start">
+            <div class="col-4">
+                <p class = "h5">Ce que nous faisons</p>
+                Chez CheckMate, nous maintenons que nous fournirons toujours des services de premier plan à quiconque. 90% des ventes sont reversées à une association de votre choix.
+                Notre mentalité est que si nous devenons intelligents ensemble, nous le serons pour toujours.
+              </div>
+              <div class="col-4">
+                <p class = "h5">Sommes-nous ouverts</p>
+                En raison de la forte demande, nous offrons maintenant des services 24 heures sur 24, 7 jours sur 7, prenez rendez-vous à tout moment!
+              </div>
+              <div class="col-4">
+                <p class = "h5">Où sommes-nous</p>
+                CheckMate!<br>
+                179 Leaf Village Drive<br>
+                Scarborough, ON M1P 4G6<br>
+              </div>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- here we input our javascript helper -->
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>

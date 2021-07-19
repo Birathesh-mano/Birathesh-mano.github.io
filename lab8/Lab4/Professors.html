@@ -1,0 +1,311 @@
+<!doctype html>
+<!-- Here is a link to the code the documents this code is based on
+https://getbootstrap.com/docs/5.0/getting-started/introduction/
+This will help you get started with your code!
+-->
+<html lang="en">
+<head>
+   <!-- Required meta tags -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- Bootstrap CSS -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+   
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+   <!-- Style sheet (CSS) and JavaScript scripts necessary to use JQuery as well as JQueryUI library -->
+   <!-- which is built on top of JQuery and offers additional possibilities -->
+   <!-- For example, JQuery UI has a datepicker which is popular and that we can use -->
+   <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/excite-bike/jquery-ui.css" rel="stylesheet" type="text/css">
+   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+    <script src="scripts/validation.js"></script>
+
+    <title>MMC LAB 6</title>
+
+    
+</head>
+<body>
+    <section id="Home"></section>
+    <br>
+ 
+    
+    <nav class="navbar bg-white text-black p-3 my-3 ">
+        <h1><img src="images/muscleLogo.png" width="170" height="130">CheckMate!</h1>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg bg-secondary navbar-dark  fixed-top">
+        <div class="container">
+            
+            
+            <a href="#" class="navbar-brand"></a>
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                   
+                    <li class="nav-item">
+                        <a href="Professors.html" class="nav-link">Team</a>
+                    </li>
+
+    
+                    <li class="nav-item">
+                        <a href="appointment.html" class="nav-link">Appointment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#where" class="nav-link">Location</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="Help.html" class="nav-link">Help</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="french.html" class="nav-link">French</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+    </nav>
+
+<!--
+I store all of the page information in a container,
+Many websites will use what is called CSS grid layouts, where you will have a header, body, footer and both sides used for ads or other information
+-->
+<div class = "container-xl">
+
+
+    <!--
+    Most websites now feature what is called a NavBar.
+    The example I give is quite simple with a logo and some text, but you can use it for many navigational patterns
+    https://getbootstrap.com/docs/5.0/components/navbar/
+    -->
+
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>Covid-19 Update</strong> After moving into Stage 2, you may now enter the facility at your appointment time. Entry WITHOUT as mask IS NOT PERMITTED.
+        <button type="button" class="btn-close " data-bs-dismiss="alert"  aria-label="Close"></button>
+    </div>
+
+   
+    <section id="Who"></section>
+    <br>
+    
+    
+
+     <!-- Cards are quite useful when building a website. They are a useful way to organize information.
+    They can be organized using a CSS grid or other layout options.
+    https://getbootstrap.com/docs/5.0/components/card/
+    -->
+    <section id="Team"></section>
+    <br><br>
+    
+    <h1><img src="images/doctorLogo.png" width="80" height="70">Meet the Team</h1>
+    <div class="row justify-content-around">
+        <div class="card" style="width: 25rem;">
+            <img src="images/employee1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Grand Master Magnus Carlsen is ranked #1 in the world at chess. 
+                    Sven Magnus Øen Carlsen (born 30 November 1990) is a Norwegian chess grandmaster who is the current World Chess Champion, 
+                    World Rapid Chess Champion, and World Blitz Chess Champion. 
+                    Carlsen first reached the top of the FIDE world rankings in 2010, 
+                    and trails only Garry Kasparov in time spent as the highest rated player in the world. 
+                    His peak classical rating of 2882 is the highest in history. 
+                    Carlsen also holds the record for the longest unbeaten run in classical chess.
+                    He now teaches at CheckMate!
+                </p>
+            </div>
+        </div>
+        <div class="card" style="width: 25rem;">
+            <img src="images/employee2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Fabiano Caruana is ranked #2 in the world at chess. Fabiano Luigi Caruana (born July 30, 1992) is an American-Italian chess player.
+                     A chess prodigy, he became a grandmaster at the age of 14 years,
+                     11 months, and 20 days—the youngest grandmaster in the history 
+                     of both Italy and the United States at the time. He now teaches at CheckMate!
+                </p>
+            </div>
+        </div>
+        <div class="card" style="width: 25rem;">
+            <img src="images/employee3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Ding Liren is ranked #3 in the world at chess. Ding Liren (born 24 October 1992) is a Chinese chess grandmaster.
+                     He is the highest rated Chinese chess player in history and is also a three-time Chinese Chess Champion. 
+                     He is the winner of the 2019 Grand Chess Tour, beating Maxime Vachier-Lagrave in the final and won the Sinquefield Cup 
+                     in 2019 as the first player since 2007 to beat Magnus Carlsen in a playoff. Ding is the first Chinese player 
+                     ever to play in a Candidates Tournament and pass the 2800 Elo mark on the FIDE world rankings.
+                    In July 2016, with a Blitz rating of 2875, he was the highest rated Blitz player in the world.
+                    He now teaches at CheckMate!
+
+
+
+                </p>
+            </div>
+        </div>
+    </div>
+    <br>
+
+     <!--
+        Code inspired by https://getbootstrap.com/docs/4.1/components/carousel/
+    -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="images/prof1.jpg" alt="First slide" id = "timg">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="images/prof2.jpg" alt="Third slide" id = "timg">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="images/prof3.jpg" alt="Second slide" id = "timg">
+            </div>
+            
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+
+
+
+    <section id="Services"></section>
+    
+    <h1><img src="images/servicesLogo.png" width="80" height="70" >  Specialized Chess Lessons Provided Based On Teacher</h1>
+        <!-- This example is using what is called an accordian, this is one of three examples
+    https://getbootstrap.com/docs/5.0/components/accordion/
+    -->
+
+    <!--service overviews taken from https://www.highway24vetclinic.com/services/Massages-->
+
+    
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Magnus Carlsen Chess Class
+                </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <strong>Common Opening Mistakes</strong><br>
+                    Our team of GrandMasters will educate you on common opening mistakes. This will significantly improve your game, 
+                    a war can be settled in the first move!
+                    <br><br>
+                    <strong>Basic Rules</strong><br>
+                    Our team of GrandMasters will teach you every rule of Chess so you understand how to play the game.
+                     You will learn how each piece move and very uncommon rules the basic player still may not know about!
+                    <br><br>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Fabiano Caruana Chess Class
+                </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+
+                    <strong>Basic Techniques</strong> <br>
+                    Our team of GrandMasters will teach you basic chess techniques that will help you win games easily against begginners.
+                    <br><br>
+                    <strong>Trade Secret 360 No Scope</strong> <br>
+                    Your teacher will show you the Academys signature move to win games against the less adept.
+                    <br><br>
+                    
+                 
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Ding Liren Chess Class
+                </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <strong>Mid Level Techniques</strong> <br>
+                    Our team of GrandMasters will teach you above average chess techniques that will help you win games easily against medium level players.
+                    <br><br>
+                    <strong>Chess Mindset</strong> <br>
+                    Our team of GrandMasters will show you the mindset needed in order to be a chess champion.
+                    <br><br>
+                    <strong>Foresight</strong> <br>
+                    Our team of GrandMasters will show you how you can predict your opponents next moves.
+                    <br><br>
+
+                </div>
+            </div>
+        </div>
+        
+
+
+    </div>
+
+
+
+        <!--
+    We can also use buttons to expand some hidden options
+    https://getbootstrap.com/docs/5.0/components/collapse/
+    -->
+    
+
+
+  
+
+    <section id="where"></section>
+<br>
+    <div class=" p-3 my-3 bg-dark text-success ">
+        <div class="row align-items-start">
+            <div class="col-4">
+                <p class = "h5">What We Do</p>
+                We, at CheckMate maintain that we will always provide top tier services to anyone. 90% of sales go towards a charity of your choice. 
+                Our mentality is that if we get smart together we will be smart forever.
+              </div>
+              <div class="col-4">
+                <p class = "h5">Are We Open</p>
+                Due to high demand we are now offering 24/7 services, book an appointment anytime!
+              </div>
+              <div class="col-4">
+                <p class = "h5">Where We Are</p>
+                CheckMate!<br>
+                179 Leaf Village Drive<br>
+                Scarborough, ON M1P 4G6<br>
+              </div>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- here we input our javascript helper -->
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>
